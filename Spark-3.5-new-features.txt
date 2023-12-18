@@ -1,0 +1,59 @@
+New Features on PySpark 3.5.0
+
+Spark Connect:
+- Scala and Go client support
+- Refactoring of the sql module into sql and sql-api to produce a minimum set of dependencies shared
+- Pandas API support for the Python Spark Connect Client
+- PyTorch-based distributed ML Support for Spark Connect
+- Structured Streaming support for Spark Connect in Python and Scala
+- Lot’s of compatibility improvements between Spark native and the Spark Connect clients across Python and Scala
+- Improved debugability and request handling for client applications (asynchronous processing, retries, long-lived queries)
+
+ML:
+- Support Distributed Training of Functions Using Deepspeed
+- Base interfaces of sparkML for spark3.5: estimator/ transformer/ model/ evaluator
+- New pyspark ML logistic regression estimator implemented on top of distributor
+- Add Classifier.getNumClasses back
+- Basic saving / loading implementation for ML on spark connect
+- Implement pipeline estimator for ML on spark connect
+- Implement cross validator estimator
+- Implement classification evaluator
+- Make PyTorch Distributor compatible with Spark Connect
+
+No new features on this version related to factorization machines, pyspark.ml.feature, scalers.
+
+
+
+We used to use version 2.4.x (consider 2.4.0) - what changed from it to 3.5.0.
+
+
+New features on ML and scalers:
+- FMClassifier
+- FMClassifierModel
+- FMRegressor
+- FMRegressionModel
+- RobustScaler
+
+Other new features:
+- a lot of features now have setInputCol and setOutputCol as methods (eg. OneHotEncoder)
+- ChiSqSelector -> UnivariateFeatureSelector
+- Interaction
+- VarianceThresholdSelector
+- LinearSVCSummary
+- LinearSVCTrainingSummary
+- RandomForestClassificationSummary
+- RandomForestClassificationTrainingSummary
+- BinaryRandomForestClassificationSummary
+- BinaryRandomForestClassificationTrainingSummary
+- MultilayerPerceptronClassificationSummary
+- MultilayerPerceptronClassificationTrainingSummary
+- FMClassificationSummary
+- FMClassificationTrainingSummary
+- pyspark.ml.functions.array_to_vector
+- pyspark.ml.functions.vector_to_array
+- pyspark.ml.functions.predict_batch_udf
+- MultivariateGaussian
+- MultilabelClassificationEvaluator
+- RankingEvaluator
+- TorchDistributor
+- HasTrainingSummary
