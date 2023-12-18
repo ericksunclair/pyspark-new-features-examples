@@ -24,7 +24,8 @@ No new features on this version related to factorization machines, pyspark.ml.fe
 
 
 
-We used to use version 2.4.x (consider 2.4.0) - what changed from it to 3.5.0.
+We used to use version 2.4.0 (https://spark.apache.org/docs/2.4.0/ml-guide.html) - 
+what changed from that to 3.5.0 (https://spark.apache.org/docs/3.5.0/ml-guide.html).
 
 
 New features on ML and scalers:
