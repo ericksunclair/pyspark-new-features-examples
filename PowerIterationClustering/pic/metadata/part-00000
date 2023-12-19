@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.clustering.PowerIterationClustering","timestamp":1703001889684,"sparkVersion":"3.5.0","uid":"PowerIterationClustering_ac1fcd513a58","paramMap":{"maxIter":40,"k":2,"weightCol":"weight"},"defaultParamMap":{"dstCol":"dst","initMode":"random","maxIter":20,"k":2,"srcCol":"src"}}
